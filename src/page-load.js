@@ -22,6 +22,7 @@ function pageLoad() {
     img.setAttribute('width', '200px');
     title.textContent = 'Le Siugpla e Distos';
 
+    tabContainer.setAttribute('id', 'tab-container');
     tabContainer.append(descTab, menuTab, contactTab);
 
     container.append(img);
