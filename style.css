@@ -1,0 +1,48 @@
+:root {
+    --first: #f89418;
+    --second: #5c1126;
+}
+
+body {
+    background-color: var(--second);
+}
+
+img {
+    border: solid 4px var(--first);
+}
+
+h1,
+p,
+ul {
+    color: var(--first);
+}
+
+#content {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+}
+
+#tab-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(160px, 1fr));
+    gap: 2px;
+    justify-items: stretch;
+    text-align: center;
+}
+
+#tab-container span {
+    cursor: pointer;
+    color: var(--second);
+    background-color: var(--first);
+}
+
+#tab-container span:hover,
+#tab-container span:focus {
+    color: var(--first);
+    background-color: var(--second);
+}
+
+#tab-content {
+    width: 40%;
+}
